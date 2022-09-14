@@ -19,7 +19,8 @@ First we'll explore different ways to get an overview of the dataset.
 Let's use the gapminder dataset, available in the `dslabs` package. Because the data is available in the package, we can load it by simply using `data(gapminder)`. First we'll look at the dataset to see what it contains. We will use `summary()`, `head()` and `str()`.
 
 ##### 1) What type of information do each one of these functions provide about our dataset?
-
+head = first 6 rows
+summary = 
 ##### 2) How is the dataset ordered?
 
 ##### 3) What range of years does our dataset contain?
@@ -50,6 +51,7 @@ We can use the `filter()` function to select rows according to values of a colum
 We can also order a data frame using `arrange()`
 
 ##### 1) Create a data frame called `df2` that is ordered so that it shows the data for each country (all years), then the next country (all years), etc.
+df2 <- arrange(df$country, year)
 
 ##### 2) Create a data frame called `algeriagdp` that includes only year and GDP data for Algeria.
 
