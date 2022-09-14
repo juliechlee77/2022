@@ -139,8 +139,6 @@ murders <- mutate(murders, rank = rank(-rate))
 murders <- mutate(murders, rank = rank(-rate))
 ```
 
->>>>>>> eeb0ebb1aff1c49e96a3fb1dfad5168cfc95ed84
-
 3\. With __dplyr__, we can use `select` to show only certain columns. For example, with this code we would only show the states and population sizes:
 
 ```{r, eval=FALSE}
@@ -152,11 +150,7 @@ Use `select` to show the state names and abbreviations in `murders`. Do not rede
 ```{r}
 select(murders, state, abb)
 ```
-<<<<<<< HEAD
 
-
-=======
->>>>>>> eeb0ebb1aff1c49e96a3fb1dfad5168cfc95ed84
 
 4\. The __dplyr__ function `filter` is used to choose specific rows of the data frame to keep. Unlike `select` which is for columns, `filter` is for rows. For example, you can show just the New York row like this:
 
@@ -298,7 +292,6 @@ my_states <- murders |>
   mutate(rate = total/population*10^5, rank = rank(-rate)) |> 
   filter((region=="West" | region === "Northeast") & rate < 1) |> 
   select(state, rate, rank)
->>>>>>> eeb0ebb1aff1c49e96a3fb1dfad5168cfc95ed84
 my_states
 ```
 
