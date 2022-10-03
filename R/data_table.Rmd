@@ -144,8 +144,15 @@ murders[, population_in_millions := population / 10^6]
 
 
 Add a murders column named `rate` with the per 100,000 murder rate as in the example code above.
+```{r}
+murders[, rate := total / population * 100000]
+```
+```
 
 2\. Add a column `rank` containing the rank, from highest to lowest murder rate. 
+```{r}
+murders[, rank := rank(-rate)]
+```
 
 
 3\. If we want to only show the states and population sizes, we can use:
