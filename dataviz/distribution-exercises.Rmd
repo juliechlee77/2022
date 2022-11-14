@@ -3,8 +3,8 @@
 
 
 1\. In the `murders` dataset, the region is a categorical variable and the following is its distribution:
-  
-  ```{r summaries-barplot-exercise, echo=FALSE}
+
+```{r summaries-barplot-exercise, echo=FALSE}
 library(dslabs)
 ds_theme_set()
 data(murders)
@@ -18,13 +18,13 @@ murders |> group_by(region) |>
 ```
 
 To the closest 5%, what proportion of the states are in the North Central region?
+23%  
   
   
+2\. Which of the following is true:
   
-  2\. Which of the following is true:
-  
-  a. The graph above is a histogram.
-b. The graph above shows only four numbers with a bar plot.
+a. The graph above is a histogram. 
+b. The graph above shows only four numbers with a bar plot. -> Correct
 c. Categories are not numbers, so it does not make sense to graph the distribution.
 d. The colors, not the height of the bars, describe the distribution.
 
